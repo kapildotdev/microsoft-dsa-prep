@@ -2,14 +2,14 @@
 //also maintaining two pointers window which can change size according to the conditions
 //if a character exist on or after i, we must move i to one step ahead of that position
 //
-//TC: O(N) SC: O(N)
+//TC: O(N) SC: O(1)
 //
 
 class Solution {
     void debug(int i, int j, int ans){
         printf("i: %d, j: %d  ans: %d\n",i,j,ans);
     }
-public:
+	public:
     int lengthOfLongestSubstring(string s) {
        int n = s.length();
        int ans = 0;
